@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REDISTRATION FORM OF STUDENT</title>
+</head>
+
+<body>
+    <h2>REDISTRATION FORM OF STUDENT</h2>
+    <form action="submit.php" method="POST">
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" maxlength="30" pattern="[A-Za-z]{1,30}" value="enter your first_name" required>
+    (max character 30 A-Z and a-z) <br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" maxlength="30" pattern="[A-Za-z]{1,30}"
+            value="enter your last_name" required>(max
+        character 30 A-Z and a-z)<br><br>
+
+        <label for=" date_of_birth">Date Of Birth: </label>
+        <select name="day">
+            <option value="">Day</option>
+            <script>
+                for (let i = 1; i <= 31; i++) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                }
+            </script>
+        </select>
+
+        <select id="dob_month" name="dob_month" required>
+            <option value="">Month</option>
+            <!-- Generate options for months using a loop or manually add them -->
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+
+        <select name="year">
+            <option value="">Year</option>
+            <script>
+                for (let i = 2023; i >= 1980; i--) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                }
+            </script>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+         
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="tel" id="mobile_number" name="mobile_number" pattern="[0-9]{10}" required>(10 digit number)
+        <br><br>
+
+        <label for="gender">Enter Gender:</label>
+        <input type="radio" id="gender_male" name="gender" value="Male" required>
+        <label for="gender_male">Male</label>
+        <input type="radio" id="gender_female" name="gender" value="Female" required>
+        <label for="gender_female">Female</label><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="30" rows="2" required></textarea><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="enter your city name" required><br><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" pattern="[0-9]{4}" value="enter your code" required>(4 digit
+        number)<br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" value="enter your state name" required><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="enter your country name" required><br><br>
+
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Singing" required>
+        <label for="hobby1">Singing</label>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Dancing" required>
+        <label for="hobby2">Dancing</label>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Scathing" required>
+        <label for="hobby3">Scathing</label>
+        <input type="checkbox" id="hobby4" name="hobbies" value="Swimmming" required>
+        <label for="hobby4">Swimmming</label>
+        <input type="checkbox" id="hobby5 name=" hobbies" value="Cycling" required>
+        <label for="hobby5">Cycling</label>
+        <input type="checkbox" id="other" value="text">
+        <label for="other">Other</label>
+        <input type="text" required>
+        <br><br>
+
+        <label for="Qualification">Qualification</label>
+
+        <table>
+            <tr>
+                <td>S Class</td>
+                <td>Examination Hall</td>
+                <td>Percentage</td>
+                <td>Year of Passing</td>
+
+            </tr>
+            <tr>
+                <td>1 Class X</td>
+                <td><input type="text" name="examinationHall" required></td>
+                <td><input type="text" name="percentage" required></td>
+                <td><input type="text" name="yearOfPassing" required></td>
+            </tr>
+            <tr>
+                <td>1 Class X</td>
+                <td><input type="text" name="examinationHall" required></td>
+                <td><input type="text" name="percentage" required></td>
+                <td><input type="text" name="yearOfPassing" required></td>
+            </tr>
+            <tr>
+                <td>1 Class X</td>
+                <td><input type="text" name="examinationHall" required></td>
+                <td><input type="text" name="percentage" required></td>
+                <td><input type="text" name="yearOfPassing" required></td>
+            </tr>
+        </table>
+        <label for="course">Applied course For BCA</label>
+
+        <input type="radio" id="c2" name="course" value="B.com" required>
+        <label for="c2">B.com</label>
+        <input type="radio" id="c3" name="course" value="B.sc" required>
+        <label for="c3">B.sc</label>
+        <input type="radio" id="c4" name="course" value="B.A" required>
+        <label for="c4">B.A</label><br><br>
+
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+
+    </form>
+
+
+</body>
+
+</html>
